@@ -3764,7 +3764,7 @@
 			(uuid "97c55436-8d91-47be-8ae4-48a5f7a1a232")
 		)
 		(instances
-			(project ""
+			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
 					(reference "U7")
 					(unit 1)
@@ -3920,7 +3920,7 @@
 			(uuid "0c5250f2-5b30-49b2-81f8-41b1f39c122b")
 		)
 		(instances
-			(project ""
+			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
 					(reference "D1")
 					(unit 1)
@@ -4055,7 +4055,7 @@
 			(uuid "73eaa32e-4ae1-471c-871b-722fcea26d53")
 		)
 		(instances
-			(project ""
+			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
 					(reference "C16")
 					(unit 1)
@@ -4251,7 +4251,7 @@
 			(uuid "7d36cade-ca06-4174-b2fb-e6467be45767")
 		)
 		(instances
-			(project ""
+			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
 					(reference "#PWR031")
 					(unit 1)
@@ -5043,7 +5043,7 @@
 			(uuid "300ff58a-347b-45eb-b2d9-ab09ac6b73c7")
 		)
 		(instances
-			(project ""
+			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
 					(reference "L1")
 					(unit 1)

@@ -6594,13 +6594,14 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "usb_storage.kicad_sch"
+		(property "Sheetfile" "sub_schema/usb_storage.kicad_sch"
 			(at 107.95 144.0946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(instances
@@ -6636,7 +6637,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "usb_switch.kicad_sch"
+		(property "Sheetfile" "sub_schema/usb_switch.kicad_sch"
 			(at 101.6 71.7046 0)
 			(effects
 				(font
