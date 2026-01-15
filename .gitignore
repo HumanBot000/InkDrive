@@ -1,2 +1,5 @@
 /PCB/E-ink_USB-Stick-backups/
 *.lck
+\#auto_saved_files#
+*.tmp
+_autosave.*
