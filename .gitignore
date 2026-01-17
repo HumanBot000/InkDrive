@@ -4,3 +4,6 @@
 *.tmp
 _autosave.*
 *-cache
+*.xml
+*.iml
+.idea

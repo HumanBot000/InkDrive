@@ -660,37 +660,34 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Small"
+		(symbol "Device:FerriteBead"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0.254)
-				(hide yes)
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at -1.27 2.032 0)
+			(property "Reference" "FB"
+				(at -3.81 0.635 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "D_Small"
-				(at -3.81 -2.032 0)
+			(property "Value" "FerriteBead"
+				(at 3.81 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 90)
+				(at -1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -699,15 +696,6 @@
 				)
 			)
 			(property "Datasheet" "~"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -716,7 +704,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Device" "D"
+			(property "Description" "Ferrite bead"
 				(at 0 0 0)
 				(effects
 					(font
@@ -725,7 +713,7 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Pins" "1=K 2=A"
+			(property "ki_keywords" "L ferrite bead inductor filter"
 				(at 0 0 0)
 				(effects
 					(font
@@ -734,7 +722,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode"
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -743,19 +731,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Small_0_1"
+			(symbol "FerriteBead_0_1"
 				(polyline
 					(pts
-						(xy -0.762 0) (xy 0.762 0)
+						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
 					)
 					(stroke
 						(width 0)
@@ -767,10 +746,10 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
+						(xy 0 1.27) (xy 0 1.2954)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -779,10 +758,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+						(xy 0 -1.27) (xy 0 -1.2192)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -790,11 +769,11 @@
 					)
 				)
 			)
-			(symbol "D_Small_1_1"
+			(symbol "FerriteBead_1_1"
 				(pin passive line
-					(at -2.54 0 0)
-					(length 1.778)
-					(name "K"
+					(at 0 3.81 270)
+					(length 2.54)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -810,9 +789,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 0 180)
-					(length 1.778)
-					(name "A"
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3391,16 +3370,6 @@
 		)
 		(uuid "57838960-8009-4a9a-93e7-c32fbac3569d")
 	)
-	(text "Never Send Power from Stick to Port"
-		(exclude_from_sim no)
-		(at 90.678 45.72 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-		)
-		(uuid "e9ca3c9d-e5ea-45be-b00d-6e0abc94dd81")
-	)
 	(text "Max 600mA"
 		(exclude_from_sim no)
 		(at 68.58 127.254 0)
@@ -3508,12 +3477,6 @@
 		(uuid "6b03e025-00a2-468a-8808-4063a1e03c50")
 	)
 	(junction
-		(at 77.47 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6b37b7a3-d3a2-4a5b-acc2-8d69f6c2ba05")
-	)
-	(junction
 		(at 88.9 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3542,6 +3505,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c7a7e8d6-8b90-4938-a4af-b7e687b79471")
+	)
+	(junction
+		(at 77.47 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6855893-ca8e-4896-afe0-7ac5471d4adb")
 	)
 	(no_connect
 		(at 149.86 101.6)
@@ -3661,16 +3630,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 39.37) (xy 77.47 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "380b046b-715a-4f13-860f-4e8b5f86e41e")
-	)
-	(wire
-		(pts
 			(xy 125.73 53.34) (xy 149.86 53.34)
 		)
 		(stroke
@@ -3688,6 +3647,16 @@
 			(type default)
 		)
 		(uuid "476a4597-5cd2-4037-b694-65a8c7a8deb5")
+	)
+	(wire
+		(pts
+			(xy 77.47 55.88) (xy 80.01 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e5c4e17-1aa9-466e-9337-2b6c7c19e74e")
 	)
 	(wire
 		(pts
@@ -3781,16 +3750,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 46.99) (xy 77.47 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a563c49-ae97-409e-bb04-1d4390fcbf05")
-	)
-	(wire
-		(pts
 			(xy 49.53 24.13) (xy 44.45 24.13)
 		)
 		(stroke
@@ -3831,16 +3790,6 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 55.88) (xy 80.01 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9cfd8ac-e15b-4f0a-b4cb-c0fe3409d7d5")
-	)
-	(wire
-		(pts
 			(xy 78.74 90.17) (xy 86.36 90.17)
 		)
 		(stroke
@@ -3848,16 +3797,6 @@
 			(type default)
 		)
 		(uuid "bbd18d44-044b-427a-8120-72b5bb2b9ad4")
-	)
-	(wire
-		(pts
-			(xy 77.47 55.88) (xy 77.47 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf72ebbe-9df7-4140-a663-07b567ec26bd")
 	)
 	(wire
 		(pts
@@ -3898,6 +3837,26 @@
 			(type default)
 		)
 		(uuid "d3569521-4e91-485f-8406-4ec6f09e4336")
+	)
+	(wire
+		(pts
+			(xy 77.47 46.99) (xy 77.47 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d49c1e42-b981-4d91-8c74-e42d703275e2")
+	)
+	(wire
+		(pts
+			(xy 77.47 55.88) (xy 77.47 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7239103-2083-4223-b600-6b40946c400f")
 	)
 	(wire
 		(pts
@@ -4404,7 +4363,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04acb4cd-8267-4021-bf67-49fd1121b7e2")
-		(property "Reference" "C62"
+		(property "Reference" "C21"
 			(at 47.498 157.48 0)
 			(effects
 				(font
@@ -4458,7 +4417,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "C62")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -4473,7 +4432,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08f53897-c9e7-46ee-a218-b8df0e6905d4")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR039"
 			(at 58.42 140.97 0)
 			(effects
 				(font
@@ -4523,7 +4482,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR047")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -4538,7 +4497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b54d9d0-3c07-45f4-9ec2-8c8577227b58")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR029"
 			(at 45.72 166.37 0)
 			(effects
 				(font
@@ -4588,7 +4547,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR079")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -4603,7 +4562,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e0540eb-3d6f-4dc1-9a95-dd13bbad4554")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR051"
 			(at 88.9 167.64 0)
 			(effects
 				(font
@@ -4653,7 +4612,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR082")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -4668,7 +4627,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f2eb7b3-9a08-44d1-b3ea-4026afc410fe")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR035"
 			(at 54.61 132.08 0)
 			(effects
 				(font
@@ -4718,7 +4677,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR038")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -4733,7 +4692,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1547bde5-4442-4315-accf-a16e002ba2a7")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR053"
 			(at 149.86 120.65 0)
 			(effects
 				(font
@@ -4783,7 +4742,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR027")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -4798,7 +4757,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "180f7c1c-7288-436e-9ac0-2d284673adcb")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR041"
 			(at 68.58 111.76 0)
 			(effects
 				(font
@@ -4848,7 +4807,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR054")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -4863,7 +4822,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1fcc5a92-a2c4-497b-93f0-52889f109a1d")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR036"
 			(at 55.88 97.79 0)
 			(effects
 				(font
@@ -4913,7 +4872,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR044")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -4928,7 +4887,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "283adb8b-2ded-4858-9621-7c2736382061")
-		(property "Reference" "C64"
+		(property "Reference" "C28"
 			(at 195.834 45.212 0)
 			(effects
 				(font
@@ -4980,7 +4939,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "C64")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -5012,7 +4971,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 82.55 156.21 0)
 			(effects
 				(font
@@ -5064,7 +5023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "316ac5fb-ffd7-4509-9a87-fff0fa775c7c")
-		(property "Reference" "C11"
+		(property "Reference" "C24"
 			(at 80.0036 57.15 90)
 			(effects
 				(font
@@ -5116,95 +5075,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 77.47 44.45 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "37726fa5-0b64-47dd-acf6-0094fcf4fe5a")
-		(property "Reference" "D1"
-			(at 79.502 43.942 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 80.01 45.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 77.47 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode, small symbol"
-			(at 77.47 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 77.47 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 77.47 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "858e1c4e-acf5-4155-a337-081f7e90ed3a")
-		)
-		(pin "1"
-			(uuid "0c5250f2-5b30-49b2-81f8-41b1f39c122b")
-		)
-		(instances
-			(project ""
-				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "D1")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -5219,7 +5090,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c2c1f90-6082-40e0-a84b-e7e443295938")
-		(property "Reference" "R10"
+		(property "Reference" "R9"
 			(at 53.594 133.604 0)
 			(effects
 				(font
@@ -5273,7 +5144,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5288,7 +5159,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d2cfdea-fd31-481f-8881-91fbc9f977bf")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR034"
 			(at 48.26 36.83 0)
 			(effects
 				(font
@@ -5338,7 +5209,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR030")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -5353,7 +5224,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e0e7ab4-f3bb-41b3-8a1b-622c34f538ce")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR043"
 			(at 68.58 180.34 0)
 			(effects
 				(font
@@ -5403,7 +5274,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR081")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5419,7 +5290,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40c14479-ba55-49ca-bb85-0a6483cf0744")
-		(property "Reference" "C63"
+		(property "Reference" "C27"
 			(at 91.44 157.4862 0)
 			(effects
 				(font
@@ -5473,7 +5344,77 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "C63")
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead")
+		(at 77.47 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "429a1130-0ebb-425a-bad5-1986da3c47fc")
+		(property "Reference" "FB1"
+			(at 81.28 41.8591 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 81.28 44.3991 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+			(at 75.692 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85331797-c31e-4475-89be-34e5c730ef66")
+		)
+		(pin "2"
+			(uuid "4238d8ec-2702-440e-849d-e43ab2d5abc5")
+		)
+		(instances
+			(project ""
+				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -5488,7 +5429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46d9beb7-4d49-4997-9364-7e511b19c585")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR030"
 			(at 46.99 90.17 0)
 			(effects
 				(font
@@ -5538,7 +5479,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR013")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -5554,7 +5495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "514febf4-9173-49fc-bf98-29669eff5f7f")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR046"
 			(at 88.9 91.44 0)
 			(effects
 				(font
@@ -5604,7 +5545,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR049")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -5619,7 +5560,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5428e3ea-2494-45d8-a27f-753c284dcd11")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR052"
 			(at 125.73 62.23 0)
 			(effects
 				(font
@@ -5669,7 +5610,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR026")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -5684,7 +5625,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5db10df9-e2ba-41ed-bb24-f2f75e467d12")
-		(property "Reference" "C25"
+		(property "Reference" "C23"
 			(at 47.752 123.444 0)
 			(effects
 				(font
@@ -5738,7 +5679,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "C25")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -5753,7 +5694,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "603da780-5abb-4eab-9e51-a2fb823b0da1")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR049"
 			(at 88.9 133.35 0)
 			(effects
 				(font
@@ -5803,7 +5744,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR041")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5889,7 +5830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6af18597-e729-4f32-984d-44e1f70bc447")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR050"
 			(at 88.9 157.48 0)
 			(effects
 				(font
@@ -5939,7 +5880,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR042")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -5954,7 +5895,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6e22ece7-7687-4db8-91e6-3f76ab075b45")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR027"
 			(at 44.45 36.83 0)
 			(effects
 				(font
@@ -6005,7 +5946,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR022")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -6020,7 +5961,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "715b93af-d083-4e7c-b3d9-53752f7e4bd1")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR044"
 			(at 80.01 59.69 0)
 			(effects
 				(font
@@ -6070,7 +6011,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR09")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -6086,7 +6027,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8396ba32-953c-4aa4-a3ef-41baf528210d")
-		(property "Reference" "C28"
+		(property "Reference" "C25"
 			(at 91.44 88.9062 0)
 			(effects
 				(font
@@ -6140,7 +6081,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "C28")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -6156,7 +6097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "871a15d6-051d-4a43-bff1-c72cf8866376")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 68.58 114.3 0)
 			(effects
 				(font
@@ -6172,7 +6113,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm"
 			(at 72.39 138.43 0)
 			(effects
 				(font
@@ -6221,7 +6162,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -6237,7 +6178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87367c05-4307-47eb-a3d0-b7f0dd7f7514")
-		(property "Reference" "U2"
+		(property "Reference" "U6"
 			(at 68.58 148.59 0)
 			(effects
 				(font
@@ -6253,7 +6194,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm"
 			(at 72.39 172.72 0)
 			(effects
 				(font
@@ -6302,7 +6243,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "U2")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -6317,7 +6258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "87f02a4a-8f82-4722-aacb-bd8d9c63be5d")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR038"
 			(at 58.42 104.14 0)
 			(effects
 				(font
@@ -6367,7 +6308,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR053")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -6382,7 +6323,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "95bf69d7-73d0-496f-a82f-23224160346d")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR055"
 			(at 185.42 125.73 0)
 			(effects
 				(font
@@ -6432,7 +6373,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR024")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -6448,7 +6389,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b9d66b1-f072-4b39-869a-41a686902970")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR054"
 			(at 185.42 46.99 0)
 			(effects
 				(font
@@ -6498,7 +6439,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR05")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -6530,7 +6471,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 82.55 87.63 0)
 			(effects
 				(font
@@ -6581,7 +6522,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a097f690-0742-4f17-b5dc-14a25e6c0e13")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR040"
 			(at 58.42 175.26 0)
 			(effects
 				(font
@@ -6631,7 +6572,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR080")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -6646,7 +6587,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1480401-d415-4d4e-af2c-39aad945c23f")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR047"
 			(at 88.9 99.06 0)
 			(effects
 				(font
@@ -6696,7 +6637,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR056")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6711,7 +6652,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1fa6eef-88e4-4c8f-9f8a-5692ca28fdee")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR045"
 			(at 82.55 69.85 0)
 			(effects
 				(font
@@ -6761,7 +6702,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR010")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -6776,7 +6717,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a7bdbfa2-2d11-4117-aeb4-6cc10225a52f")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR033"
 			(at 46.99 134.62 0)
 			(effects
 				(font
@@ -6826,7 +6767,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR043")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -6841,7 +6782,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2ba9a9a-71d3-4063-b5b0-55435c07b346")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR028"
 			(at 45.72 158.75 0)
 			(effects
 				(font
@@ -6891,7 +6832,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR011")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -6906,7 +6847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bfbe344c-f96f-43c0-aae4-c83c980dff86")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR031"
 			(at 46.99 100.33 0)
 			(effects
 				(font
@@ -6956,7 +6897,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR051")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -6972,7 +6913,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2e66f52-4f36-494b-a6e7-4ead30a18b42")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR056"
 			(at 191.77 54.61 0)
 			(effects
 				(font
@@ -7022,7 +6963,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR02")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -7038,7 +6979,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca74f66e-aaaf-45cf-9d9d-1aa04a3dd36f")
-		(property "Reference" "L1"
+		(property "Reference" "L3"
 			(at 82.55 116.84 90)
 			(effects
 				(font
@@ -7054,7 +6995,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 82.55 121.92 0)
 			(effects
 				(font
@@ -7090,7 +7031,7 @@
 		(instances
 			(project ""
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "L1")
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -7105,7 +7046,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd764175-cdeb-4c14-b990-02bacfe9a519")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR042"
 			(at 68.58 146.05 0)
 			(effects
 				(font
@@ -7155,7 +7096,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR045")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7170,7 +7111,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cd7983b2-4d97-48c4-ac1b-e6a6192fe155")
-		(property "Reference" "R15"
+		(property "Reference" "R10"
 			(at 53.594 166.878 0)
 			(effects
 				(font
@@ -7224,7 +7165,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "R15")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7240,7 +7181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf7a20b7-b306-4dd3-ba6b-04266c89a63e")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR048"
 			(at 88.9 125.73 0)
 			(effects
 				(font
@@ -7290,7 +7231,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR046")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -7305,7 +7246,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2cf9247-8406-49ac-96b1-5fcc349ca239")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR032"
 			(at 46.99 124.46 0)
 			(effects
 				(font
@@ -7355,7 +7296,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR012")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7371,7 +7312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "deb31002-722a-4fdd-8500-82ace0547255")
-		(property "Reference" "U4"
+		(property "Reference" "U7"
 			(at 167.64 40.64 0)
 			(effects
 				(font
@@ -7387,7 +7328,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DFN_QFN:WQFN-42-1EP_3.5x9mm_P0.5mm_EP2.05x7.55mm"
 			(at 167.64 83.82 0)
 			(effects
 				(font
@@ -7637,7 +7578,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "U4")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -7653,7 +7594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4008f18-26bf-4c56-9d11-a5d9e41bfea0")
-		(property "Reference" "U9"
+		(property "Reference" "U4"
 			(at 68.58 80.01 0)
 			(effects
 				(font
@@ -7670,7 +7611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm"
 			(at 72.39 104.14 0)
 			(effects
 				(font
@@ -7719,7 +7660,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "U9")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7753,7 +7694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB3_A_Plug_Wuerth_692112030100_Horizontal"
 			(at 69.85 30.48 0)
 			(effects
 				(font
@@ -7828,7 +7769,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fde84797-4e2e-4778-88e9-8d85da35692f")
-		(property "Reference" "C27"
+		(property "Reference" "C22"
 			(at 48.26 89.916 0)
 			(effects
 				(font
@@ -7882,7 +7823,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "C27")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -7897,7 +7838,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe36187d-9c3a-4531-933a-da2df3495c64")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR037"
 			(at 55.88 165.1 0)
 			(effects
 				(font
@@ -7947,7 +7888,7 @@
 		(instances
 			(project "E-ink_USB-Stick"
 				(path "/d1306880-8af5-47a3-a63d-5a82f7bde7d2/c50dfaae-1426-4358-8a3b-5e16fb2a41e3"
-					(reference "#PWR028")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
